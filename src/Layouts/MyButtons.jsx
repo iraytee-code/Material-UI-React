@@ -18,21 +18,17 @@ const MyButtons = () => {
           px={3}
           bgColor="#edf6f9"
         >
-          <Buttons variant="contained" title="contained Variant" />
-          <Buttons variant="outlined" title="outlined Variant" />
-          <Buttons variant="outlined" title="disabled Variant" disabled />
+          <Buttons variant="contained" title="Default" />
+          <Buttons variant="contained" color="primary" title="Primary" />
+          <Buttons variant="contained" color="secondary" title="Secondary" />
+          <Buttons variant="contained" disabled={true} title="Disabled" />
           <Buttons
             variant="contained"
-            title="disabled Elevation"
-            elevation={true}
+            color="primary"
+            linkTitle="#contained-buttons"
+            title="Link"
           />
-          <Buttons
-            variant="contained"
-            title="enabled Elevation"
-            elevation={false}
-          />
-          <Buttons variant="contained" title="Success" color="success" />
-          <Buttons variant="contained" title="Error" color="error" />
+          <Buttons variant="outlined" color="primary" title="Outlined" />
         </StackComponent>
         <Stack></Stack>
       </BoxComponent>

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import Button from "@mui/material/Button";
+import Button from "@material-ui/core/Button";
 
-const Buttons = ({ variant, title, disabled, elevation, color }) => {
+const Buttons = ({ variant, title, disabled, elevation, color, linkTitle }) => {
   return (
     <Fragment>
       <Button
@@ -9,6 +9,7 @@ const Buttons = ({ variant, title, disabled, elevation, color }) => {
         disabled={disabled}
         disableElevation={elevation}
         color={color}
+        href={linkTitle}
       >
         {title}
       </Button>

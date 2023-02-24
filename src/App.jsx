@@ -1,12 +1,9 @@
-import GridComponent from "./components/LayoutComponent/GridComponent";
 import { Fragment } from "react";
-import MyButtons from "./Layouts/MyButtons";
+import Login from "./pages/Login";
 function App() {
   return (
     <Fragment>
-      <GridComponent container={true}>
-        <MyButtons />
-      </GridComponent>
+      <Login />
     </Fragment>
   );
 }
